@@ -45,16 +45,26 @@ class _TemelState extends State<Temel> {
         // overflow: TextOverflow.ellipsis,
         // textAlign: TextAlign.center,
         //2.renk kullanımı
-        child: Text.rich(TextSpan(children: <TextSpan>[
-          TextSpan(
-              text: "Merhaba",
-              style: TextStyle(fontStyle: FontStyle.italic, fontSize: 25)),
-          TextSpan(
-              text: "Flutter",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50)),
-        ])),
+        //   child: Text.rich(TextSpan(children: <TextSpan>[
+        //     TextSpan(
+        //         text: "Merhaba",
+        //         style: TextStyle(fontStyle: FontStyle.italic, fontSize: 25)),
+        //     TextSpan(
+        //         text: "Flutter",
+        //         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 50)),
+        //   ])),
+        // child: Image.network(
+        // 'https://images.unsplash.com/photo-1593476550610-87baa860004a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80')
+        child: Image.asset("assets/2.jpeg"),
+        // image: AssetImage("assets/2.jpeg"),
+        //   fit: BoxFit.cover,
+        //   image: NetworkImage( // internetten resim bulma
+        //       'https://images.unsplash.com/photo-1593476550610-87baa860004a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80'),
+        //   height: 250,
+        //   width: 150,
+        // ),
       ),
-      backgroundColor: Colors.yellow.shade400, //3.renk kullanımı
+      backgroundColor: Colors.blue.shade400, //3.renk kullanımı
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           print("Flat Button Tıklandı");
